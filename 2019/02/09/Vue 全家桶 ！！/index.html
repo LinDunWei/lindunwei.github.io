@@ -1,114 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="utf-8">
-  
-
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="[TOC] Vue 全家桶 ！！授课老师： 渡一教育 杉杉老师 笔记：         LDW 班级：        渡一五期进阶班 玩转  vue 全家桶    一一、创建一个Vue实例CDN地址：1&amp;lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;&amp;gt;&amp;lt;/script&amp;gt; 创建实例对象123456789&amp;lt">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/2019/02/09/Vue 全家桶 ！！/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="[TOC] Vue 全家桶 ！！授课老师： 渡一教育 杉杉老师 笔记：         LDW 班级：        渡一五期进阶班 玩转  vue 全家桶    一一、创建一个Vue实例CDN地址：1&amp;lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;&amp;gt;&amp;lt;/script&amp;gt; 创建实例对象123456789&amp;lt">
-<meta property="og:locale" content="default">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejllvggwj30ub09qwfm.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejnndhe3j30so09d757.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejoknk2vj30sr0avjsc.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejp5jvocj31hc0a3dgy.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejprtec4j31hc09st9p.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejq7716bj31310c6gm8.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejs36iroj312p0ardgm.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejsm8nshj31hc0ggtau.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejt7t8g2j31hc0do40s.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejthc2rtj31ed0esgnv.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejtyce6wj31gq0fxach.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejuc1541j31hc0gfq5v.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejupgpv2j30oc06lmx2.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejv3eceaj31070dqdgz.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejwjrozfj313o082mz4.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejwx96k0j31hc0oudps.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejx4c2h5j31hc0b1n12.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejxjo8vyj311b0p1aiy.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejxx797yj30oo038dfn.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejy46yijj30oo035jr7.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejyin236j30i005v0sp.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejyq6t1ej30xz09lt91.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejz0k01pj30y406kjrl.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejz858wtj30xz06idg0.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejzh9po2j30y4094weq.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejzobrtdj30xx07gmx8.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejzvcq6jj30xy0fk74r.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzek2bt0hkj30sz09zmxb.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzek2n9d6jj30xd05iglk.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzek2z4b20j31850miju3.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzek3aw315j30nx0azwew.jpg">
-<meta property="og:updated_time" content="2019-01-21T14:05:23.039Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="[TOC] Vue 全家桶 ！！授课老师： 渡一教育 杉杉老师 笔记：         LDW 班级：        渡一五期进阶班 玩转  vue 全家桶    一一、创建一个Vue实例CDN地址：1&amp;lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;&amp;gt;&amp;lt;/script&amp;gt; 创建实例对象123456789&amp;lt">
-<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/007hDEeogy1fzejllvggwj30ub09qwfm.jpg">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>Hexo</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_859455_eaq7v6w8ktj.css">
 </head>
-</html>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+<header class="header">
+    <div class="header-inner">
+        <div class="header-title">
+
+        </div>
+        <nav class="header-nav">
+            
+            <a href="/" class="header-nav-link">
+                首页
+            </a>
+            
+
+            
+            <a href="/archives" class="header-nav-link">
+                归档
+            </a>
+            
+
+            
+            <a href="/tags" class="header-nav-link">
+                标签
+            </a>
+            
+
+            
+            <a href="/about/" class="header-nav-link">
+                关于
+            </a>
+            
+        </nav>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
 </header>
-      <div class="outer">
-        <section id="main"><article id="post-Vue 全家桶 ！！" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/02/09/Vue 全家桶 ！！/" class="article-date">
-  <time datetime="2019-02-09T13:28:53.295Z" itemprop="datePublished">2019-02-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>[TOC]</p>
+<header class="mobile-header">
+    <div class="mobile-nav">
+        <div class="mobile-nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile-nav-title">
+            <a href="/" class="mobile-nav-title-link">John Doe's Blog</a>
+        </div>
+
+    </div>
+    <nav class="mobile-menu">
+        <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-home"></i>
+                <a href="/" class="mobile-nav-link">首页</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-archive"></i>
+                <a href="/archives" class="mobile-nav-link">归档</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-tag"></i>
+                <a href="/tags" class="mobile-nav-link">标签</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-about"></i>
+                <a href="/about/" class="mobile-nav-link">关于</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="main">
+    <div class="content-inner">
+        <div class="posts">
+    <article class="post-whole">
+        <div class="post-title">
+            <h2 class="title"></h2>
+            <div class="post-meta">
+                <span class="post-time">2019-02-09</span>
+                
+                <span class="post-visit"> 阅读次数：<span id="busuanzi_value_page_pv"></span></span>
+            </div>
+        </div>
+        <div class="post-toc" id="post-toc">
+    <strong class="post-toc-title">目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Vue-全家桶-！！"><span class="toc-text">Vue 全家桶 ！！</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#玩转-vue-全家桶-一"><span class="toc-text">玩转  vue 全家桶    一</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、创建一个Vue实例"><span class="toc-text">一、创建一个Vue实例</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#CDN地址："><span class="toc-text">CDN地址：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#创建实例对象"><span class="toc-text">创建实例对象</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#v-bind属性绑定："><span class="toc-text">v-bind属性绑定：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#v-on事件绑定"><span class="toc-text">v-on事件绑定</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#v-html-指令"><span class="toc-text">v-html 指令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#v-text指令"><span class="toc-text">v-text指令</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、计算属性和监听器"><span class="toc-text">二、计算属性和监听器</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#使用computed：-计算属性"><span class="toc-text">使用computed：{} 计算属性</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、绑定class和style"><span class="toc-text">三、绑定class和style</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#class绑定"><span class="toc-text">class绑定</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#style绑定"><span class="toc-text">style绑定</span></a></li></ol></li></ol><li class="toc-item toc-level-3"><a class="toc-link" href="#四、条件渲染"><span class="toc-text">四、条件渲染</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#V-show"><span class="toc-text">V-show</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#v-if-v-else-v-if-else"><span class="toc-text">v-if     /   v-else    /   v-if-else</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#v-if-和-v-show-的异同点"><span class="toc-text">v-if   和   v-show 的异同点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、列表渲染"><span class="toc-text">五、列表渲染</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#v-for-指令"><span class="toc-text">v-for 指令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#数组更新检测注意事项-："><span class="toc-text">数组更新检测注意事项   ：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#数组变异的方法"><span class="toc-text">数组变异的方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#set（）-和-set（）-方法"><span class="toc-text">set（） 和  $set（）   方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#用v-for进行对对象的迭代"><span class="toc-text">用v-for进行对对象的迭代</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#对象更改检测注意事项"><span class="toc-text">对象更改检测注意事项</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#六、事件处理-amp-表单输入绑定"><span class="toc-text">六、事件处理 &amp;  表单输入绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#七、组件"><span class="toc-text">七、组件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#全局组件"><span class="toc-text">全局组件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#局部组件"><span class="toc-text">局部组件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#运用vue组件制作一个商品列表"><span class="toc-text">运用vue组件制作一个商品列表</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#八、父子组件通信"><span class="toc-text">八、父子组件通信</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#props"><span class="toc-text">props</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#在子组件中添加事件，添加-删除购物车，计算总价"><span class="toc-text">在子组件中添加事件，添加/删除购物车，计算总价</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#解决重复添加-price-的办法"><span class="toc-text">解决重复添加 price 的办法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#点击添加商品后背景变灰效果"><span class="toc-text">点击添加商品后背景变灰效果</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#计算添加的商品总价格"><span class="toc-text">计算添加的商品总价格</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#添加点击鼠标右键商品移除购物车事件"><span class="toc-text">添加点击鼠标右键商品移除购物车事件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#子组件向父组件传值-（-emit函数-）"><span class="toc-text">子组件向父组件传值 （ $emit函数 ）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#玩转-vue-全家桶-二"><span class="toc-text">玩转  vue 全家桶    二</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#九、动态组件、插槽"><span class="toc-text">九、动态组件、插槽</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#在动态组件上使用keep-alive"><span class="toc-text">在动态组件上使用keep-alive</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#插槽"><span class="toc-text">插槽</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#具名插槽"><span class="toc-text">具名插槽</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#作用域插槽"><span class="toc-text">作用域插槽</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#十、vue生命周期"><span class="toc-text">十、vue生命周期</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#十一、vue-cli创建项目"><span class="toc-text">十一、vue-cli创建项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#十二、路由"><span class="toc-text">十二、路由</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装路由"><span class="toc-text">安装路由</span></a></li></ol></li></ol></li>
+    <div class="back-to-top" id="back-to-top">
+        <a href="javascript:void(0);">回到顶部</a>
+    </div>
+</div>
+        <div class="post-content">
+            <p>[TOC]</p>
 <h1 id="Vue-全家桶-！！"><a href="#Vue-全家桶-！！" class="headerlink" title="Vue 全家桶 ！！"></a>Vue 全家桶 ！！</h1><p><strong>授课老师</strong>： 渡一教育 杉杉老师</p>
 <p><strong>笔记</strong>：         LDW</p>
 <p><strong>班级</strong>：        渡一五期进阶班</p>
@@ -391,89 +377,48 @@
 <p>我们来自己配置一次路由，先取消main文件中路由的导入，</p>
 <p><img src="http://ww1.sinaimg.cn/large/007hDEeogy1fzek3aw315j30nx0azwew.jpg" alt=""></p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/02/09/Vue 全家桶 ！！/" data-id="cjrxinntn0000ronlnluzqyx8" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-    
-  
-</article>
-
-</section>
+        </div>
         
-          <aside id="sidebar">
-  
+    </article>
+</div>
+<div class="paginator">
     
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
         
-          <li>
-            <a href="/2019/02/09/Vue 全家桶 ！！/">(no title)</a>
-          </li>
         
-      </ul>
+    
+</div>
+<div id="comment-container"></div>
     </div>
-  </div>
+</div>
+<footer class="footer-social">
+    
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    
+
+    
+
+    <div class="footer-copyright">
+        <p class="time-line">
+            &copy;
+            
+            
+            2019
+            &nbsp;<i class="iconfont icon-heart"></i>&nbsp;
+            <a target="_blank" href="https://github.com/iJinxin">John Doe</a>
+        </p>
+        <p class="theme-info">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme -
+            <a target="_blank" href="https://github.com/iJinxin/hexo-theme-sky">Sky</a>
+        </p>
     </div>
-  </div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
-
-  </div>
-</body>
+</script>
 </html>
